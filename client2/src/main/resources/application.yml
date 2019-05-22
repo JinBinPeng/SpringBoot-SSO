@@ -1,0 +1,12 @@
+server:
+  port: 8087
+security:
+  oauth2:
+    client:
+      client-id: ben2
+      client-secret: 123456
+      user-authorization-uri: http://localhost:8080/pjb/oauth/authorize
+      access-token-uri: http://localhost:8080/pjb/oauth/token
+    resource:
+      jwt:
+        key-uri: http://localhost:8080/pjb/oauth/token_key
